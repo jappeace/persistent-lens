@@ -5,19 +5,21 @@
 {-# LANGUAGE ScopedTypeVariables   #-}
 {-# LANGUAGE TypeFamilies          #-}
 
--- TODO split out as library (if you read this, tell jappie to do it).
-module Persistent.Lens(entityIso, enval, enkey) where
+-- | Lenses for persistent.
+module Persistent.Lens(entityIso, valueLens, keyLens) where
 
 import Control.Lens
 import Database.Persist.Types
 import Prelude
 
+-- | from an entity to a tuple and back
 entityIso :: Iso' (Entity a) (Key a, a)
 entityIso = iso (\(Entity a b) -> (a, b)) $ uncurry Entity
 
-enval :: Lens' (Entity a) a
-enval = entityIso . _2
+-- | A lens from an entity to it's value
+valueLens :: Lens' (Entity a) a
+valueLens = entityIso . _2
 
-enkey :: Lens' (Entity a) (Key a)
-enkey = entityIso . _1
-
+-- | A lens from an entity to it's key
+keyLens :: Lens' (Entity a) (Key a)
+keyLens = entityIso . _1
