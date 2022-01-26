@@ -1,10 +1,10 @@
-name:                template
+name:                persistent-lens
 version:             1.0.0
 license:             MIT
 author:              "Jappie Klooster"
 maintainer:          "jappieklooster@hotmail.com"
-copyright:           "2020 Jappie Klooster"
-github:              "jappeace/template"
+copyright:           "2022 Jappie Klooster"
+github:              "jappeace/persistent-lens"
 
 extra-source-files:
 - Readme.md
@@ -53,28 +53,8 @@ default-extensions:
 
 dependencies:
 - base >= 4.7 && < 5
+- lens
+- persistent
 
 library:
   source-dirs: src
-
-executables:
-  exe:
-    main:                exe.hs
-    source-dirs:         app
-    dependencies:
-    - template
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-
-tests:
-  unit:
-    main:                Main.hs
-    source-dirs:
-    - test
-    dependencies:
-    - tasty
-    - tasty-quickcheck
-    - tasty-hunit
-    - template

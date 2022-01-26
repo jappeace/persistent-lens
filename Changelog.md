@@ -1,6 +1,7 @@
-# Change log for template project
+# Change log for persistent-lens project
 
 ## Version 0.0.0 
 
-import [template](https://github.com/jappeace/template).
++ add persistent lens
++ import [template](https://github.com/jappeace/template).
 
