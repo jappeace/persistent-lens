@@ -1,6 +1,6 @@
 [![https://jappieklooster.nl](https://img.shields.io/badge/blog-jappieklooster.nl-lightgrey)](https://jappieklooster.nl/tag/haskell.html)
 [![Jappiejappie](https://img.shields.io/badge/twitch.tv-jappiejappie-purple?logo=twitch)](https://www.twitch.tv/jappiejappie)
-[![Githbu actions build status](https://img.shields.io/github/workflow/status/jappeace/persistent-lens-project/Test)](https://github.com/jappeace/persistent-lens-project/actions)
+[![Githbu actions build status](https://img.shields.io/github/workflow/status/jappeace/persistent-lens/Test)](https://github.com/jappeace/persistent-lens/actions)
 [![Jappiejappie](https://img.shields.io/badge/discord-jappiejappie-black?logo=discord)](https://discord.gg/Hp4agqy)
 [![Hackage version](https://img.shields.io/hackage/v/persistent-lens.svg?label=Hackage)](https://hackage.haskell.org/package/persistent-lens) 
 
