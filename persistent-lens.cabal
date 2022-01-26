@@ -6,6 +6,9 @@ cabal-version: 1.12
 
 name:           persistent-lens
 version:        1.0.0
+synopsis:       lens helpers for persistent.
+description:    adds an isomorphism from entity to tuple and field lenses on entity.
+category:       Database
 homepage:       https://github.com/jappeace/persistent-lens#readme
 bug-reports:    https://github.com/jappeace/persistent-lens/issues
 author:         Jappie Klooster

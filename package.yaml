@@ -6,6 +6,9 @@ maintainer:          "jappieklooster@hotmail.com"
 copyright:           "2022 Jappie Klooster"
 github:              "jappeace/persistent-lens"
 synopsis:            "lens helpers for persistent."
+description:         "adds an isomorphism from entity to tuple and field lenses on entity."
+category:            "Database"
+
 
 extra-source-files:
 - Readme.md
