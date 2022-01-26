@@ -5,6 +5,7 @@ author:              "Jappie Klooster"
 maintainer:          "jappieklooster@hotmail.com"
 copyright:           "2022 Jappie Klooster"
 github:              "jappeace/persistent-lens"
+synopsis:            "lens helpers for persistent."
 
 extra-source-files:
 - Readme.md
