@@ -6,20 +6,20 @@
 {-# LANGUAGE TypeFamilies          #-}
 
 -- | Lenses for persistent.
-module Persistent.Lens(entityIso, valueLens, keyLens) where
+module Persistent.Lens(entityTupleIso, valueLens, keyLens) where
 
 import Control.Lens
 import Database.Persist.Types
 import Prelude
 
--- | from an entity to a tuple and back
-entityIso :: Iso' (Entity a) (Key a, a)
-entityIso = iso (\(Entity a b) -> (a, b)) $ uncurry Entity
+-- | an isomorphism from an entity to a tuple
+entityTupleIso :: Iso' (Entity a) (Key a, a)
+entityTupleIso = iso (\(Entity a b) -> (a, b)) $ uncurry Entity
 
 -- | A lens from an entity to it's value
 valueLens :: Lens' (Entity a) a
-valueLens = entityIso . _2
+valueLens = entityTupleIso . _2
 
 -- | A lens from an entity to it's key
 keyLens :: Lens' (Entity a) (Key a)
-keyLens = entityIso . _1
+keyLens = entityTupleIso . _1
